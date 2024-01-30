@@ -5,7 +5,7 @@ And infinite scroll)
 
 ---
 
-## Follow link ` https://eduardick1.github.io/cat-pinterest/ ` to application... 
+## Follow ` [link](https://eduardick1.github.io/cat-pinterest/) ` to application... 
 
 ## Tech Stack
 
