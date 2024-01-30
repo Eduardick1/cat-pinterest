@@ -1,0 +1,123 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: inherit;
+}
+
+$gap: 3rem;
+
+.container {
+  @media (min-width: 1160px) {
+    max-width: calc(1144px + $gap * 2);
+  }
+  @media (min-width: 1760px) {
+    max-width: calc(1744px + $gap * 2);
+  }
+  height: 100%;
+  padding: 0 $gap;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #2196f3;
+  min-height: 4rem;
+  .Page {
+    display: inline-block;
+    height: 100%;
+    padding: 1.5rem $gap;
+    &:hover {
+      background-color: darken(#2196f3, 5%) !important;
+    }
+  }
+}
+
+.Card {
+  width: 250px;
+  height: 250px;
+  position: relative;
+  border-radius: 0.5rem;
+  transition: all 300ms ease;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+  }
+  &__fav {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    display: none;
+    place-content: center;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.1);
+    }
+    svg {
+      fill: #f24e1e;
+    }
+  }
+  &:hover {
+    transform: scale(1.1);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  }
+  &:hover &__fav {
+    display: grid;
+  }
+  &__container {
+    display: grid;
+    place-content: center center;
+    gap: $gap;
+    margin: $gap auto;
+    @media (max-width: 260px) {
+      grid-template-columns: repeat(1, 250px);
+    }
+    @media (min-width: 560px) {
+      grid-template-columns: repeat(2, 250px);
+    }
+    @media (min-width: 860px) {
+      grid-template-columns: repeat(3, 250px);
+    }
+    @media (min-width: 1160px) {
+      grid-template-columns: repeat(4, 250px);
+    }
+    @media (min-width: 1760px) {
+      grid-template-columns: repeat(6, 250px);
+    }
+  }
+}
+
+.Fav_not_found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+  h1 {
+    font-size: calc((1vw + 1vh) * 3);
+  }
+  p {
+    font-size: calc((1vw + 1vh) * 1.5);
+  }
+  .image {
+    background: url("./assets/notFound.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50%;
+    height: 20dvw;
+  }
+}
+
+@keyframes SKELETON-LOADING {
+  0% {
+    background-color: rgba(#2196f3, 1);
+  }
+  100% {
+    background-color: rgba(#2196f3, 0.1);
+  }
+}
