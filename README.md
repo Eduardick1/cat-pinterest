@@ -1,30 +1,36 @@
-# React + TypeScript + Vite
+# Cat's Pinterest
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Cute gallery, with the ability to add cards to favorites.
+And infinite scroll)
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Follow link ` https://eduardick1.github.io/cat-pinterest/ ` to application... 
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+**Client:**
 
-- Configure the top-level `parserOptions` property like this:
+- React
+- Redux Tool Kit
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+**Design**
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- SCSS
+
+## Color Reference
+
+| Color            | Hex                                                              |
+| ---------------- | ---------------------------------------------------------------- |
+| Primary Color     | ![#2196f3](https://via.placeholder.com/10/2196f3?text=+) #2196f3 |
+| Secondary Color | ![#f24e1e](https://via.placeholder.com/10/f24e1e?text=+) #f24e1e |
+
+---
+
+## Check screenshots in `PREVIEW` folder... 
+
+![MainScreen](https://github.com/Eduardick1/cat-pinterest/blob/main/PREVIEW/MainPAge.png)
+![Favs](https://github.com/Eduardick1/cat-pinterest/blob/main/PREVIEW/%D0%91%D0%B5%D0%B7%D1%8B%D0%BC%D1%8F%D0%BD%D0%BD%D1%8B%D0%B9.png)
+![Card](https://github.com/Eduardick1/cat-pinterest/blob/main/PREVIEW/card.png)
+![Skeleton](https://github.com/Eduardick1/cat-pinterest/blob/main/PREVIEW/preloader.png)
+
